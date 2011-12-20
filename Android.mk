@@ -49,7 +49,7 @@ NANO_ETC := $(TARGET_OUT)/etc/$(LOCAL_MODULE)/
 NANO_CONFIGS := $(addprefix $(LOCAL_PATH)/etc/,$(etc_files))
 $(NANO_CONFIGS): NANO_BINARY := $(LOCAL_MODULE)
 $(NANO_CONFIGS): $(LOCAL_INSTALLED_MODULE)
-	@echo "Install: $@ -> $(NANO_ETC)"
+#	@echo "Install: $@ -> $(NANO_ETC)"
 	@mkdir -p $(NANO_ETC)
 	$(hide) cp $@ $(NANO_ETC)
 
